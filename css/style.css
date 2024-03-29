@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Footer */
+.footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+}
+    
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+    
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+    
+.footer .row a:hover{
+color:#fff;
+cursor: pointer;
+}
+    
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+    
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+    
+@media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+}
+
+.con {
+  background: url(../images/fon1.jpg) no-repeat;
+  width: 100%;
+  height: 900px;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+/* Название на главном меню */
+.cnt {
+  letter-spacing: .5em;
+  display: inline-block;
+  position: relative;
+}
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.cnt-text {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  display: block;
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+
+.con-fon {
+  text-align: center;
+  font-size: clamp(6px, 2vw, 20px);
+  padding: 18% 0 0 0;
+}
+  
+body{
+  margin:0;
+  overflow-x:hidden;
+}
+    
+
+  
+.summary-fonfon::before {
+  color: #00f7ff;
+}
+  
+.summary-fonfon:hover {
+  color: #ff0008;
+  cursor: pointer;
+}
+
+.pm-rsk:hover {
+  cursor: pointer;
+}
+
+/* Конец Регламента */
+
+
+
+/* Начало Контакты */
+.section-bg {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  padding: 0;
+  height: 100vh;
+  background: url(../images/efootball_bg_cl2.webp);
+  margin-top: -25px;
+}
+
+.kontakt-container {
+position: relative;
+box-sizing: border-box;
+flex: 1;
+}
+
+.kontakt-add {
+  padding-top: 85px;
+  font-family: "Roboto Slab";
+}
+
+.kontakt-name-text {
+font-size: 70px;
+text-align: center;
+color: rgb(0, 229, 255);
+}
+
+.kontakt-list {
+  padding: 0px 0px 0 50px;
+}
+
+.kontakt-tg {
+  display: block;
+  width: 25%;
+}
+
+.kontakt-qiwi img {
+  padding-right: 6px;
+  width: 7.7%;
+  height: 50%;
+}
+
+.kontakt-card img {
+  width: 8%;
+  height: 50%;
+}
+
+.reg-fa {
+  padding: 0px 10px 0px 0px;
+  color: #ff6a13;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 35px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.row-tg a {
+  text-decoration: none;
+  color: #ff6a13;
+  display: flex;
+  padding: 10px 0px;
+  align-items: baseline;
+  font-size: 22px;
+}
+
+.row-tg a:hover {
+  color: #ffff00;
+}
+
+.kontakt-donate {
+  display: block;
+  padding-top: 155px;
+}
+
+.kontakt-donate-text {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.kontakt-qiwi {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.kd-1 {
+  color: #ffffff;
+  padding-left: 60px;
+}
+
+.kontakt-card {
+  display: flex;
+  align-items: center;
+}
+
+/* Конец Контакты */
+
+
+/* Меню Бургер */
+.content-area {
+  padding: 60px  0 0 0;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 30px;
+  left: 25px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 10;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  z-index: 1;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.reg-container {
+  background: url(../images/efootball_bg_cl2.webp); 
+  background-size: 100% auto;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.name-reg-vid {
+  text-align: center;
+  font-size: 40px;
+}
+
+.e-content {
+  text-align: justify; 
+  margin: 25px; 
+  font-size: 18px;
+}
+
+/* Турниры */
+.container-turnir {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  padding: 0;
+  height: 100vh;
+  background: url(../images/efootball_bg_cl2.webp);
+  margin-top: -25px;
+  padding-bottom: 100px;
+}
+
+.mc-sport {
+  background-color: #fff;
+  border-radius: 30px;
+  margin-bottom: 12px;
+  padding: 16px;
+}
+
+.mc-sport-tournament:last-child {
+  border-bottom-style: none;
+}
+
+.mc-sport-tournament {
+  border-bottom: 1px solid #d7d8dc;
+}
+
+.table {
+  color: var(--primary-2);
+  font: 13px/18px Roboto Condensed,Arial Narrow,sans-serif;
+  max-width: 100%;
+  width: 100%;
+}
+
+caption, table, td, th {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.mc-sport-tournament .table thead tr th:first-child {
+  padding-left: 38px;
+}
+
+.table td:not(._no-extra-padding):first-child, .table th:not(._no-extra-padding):first-child {
+  padding-left: 12px;
+}
+
+.table td._w-50, .table th._w-50 {
+  width: 50%;
+}
+
+.table th, .table th span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.table th {
+  color: var(--secondary);
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+.table td, .table th {
+  padding: 7px 6px 6px;
+}
+
+caption, td, th {
+  font-weight: 400;
+  text-align: left;
+}
+
+caption, table, td, th {
+  vertical-align: middle;
+}
+
+.table td._w-25, .table th._w-25 {
+  width: 25%;
+}
+
+.table td:not(._no-extra-padding):last-child, .table th:not(._no-extra-padding):last-child {
+  padding-right: 12px;
+}
+
+.table-item {
+  text-decoration: none;
+}
+
+.table-item, ._hidden-md {
+  color: #000000;
+}
+
+.ms-cont {
+  padding: 10% 25px 0 25px;
+}

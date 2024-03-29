@@ -1,0 +1,509 @@
+
+/* Шрифт меню */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+ul,
+ol {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td {
+    vertical-align: top;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+    padding: 0;
+    font-family: 'ALS Sector';
+    font-weight: 400;
+}
+
+#body {
+    position: relative;
+    z-index: 110;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    padding-top: 0px;
+    padding: 0;
+    background: none;
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+#body_margin {
+    padding-top: 110px;
+}
+
+.width {
+    min-width: 980px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.width.inner {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.clr {
+    clear: both;
+}
+
+.main-menu {
+    position: relative;
+    z-index: 110;
+    margin: 25px auto 0px auto;
+    background: #e73338;
+}
+
+.main-menu ul {
+    margin: 0 50px 0 0;
+    padding: 0;
+    height: 50px;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    height: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-menu ul li.statistics {
+    position: relative;
+}
+
+.main-menu ul li > a {
+    position: relative;
+    display: block;
+    margin: 0px 0 0 0;
+    padding: 1px 20px 0 20px;
+    height: 49px;
+    font-size: 20px;
+    line-height: 49px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Russo One";
+    font-weight: 100;
+}
+
+.main-menu ul li.with-subnav > a {
+    padding-right: 30px;
+}
+
+.main-menu ul li > a i {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 24px;
+    border: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+
+.main-menu ul li.news > a i {
+    display: block;
+}
+
+.main-menu ul li.media > a i {
+    display: block;
+}
+
+.main-menu ul li:hover > a {
+    background: #c0c2ca;
+    color: #030a09;
+}
+
+.main-menu ul li:hover > a i {
+    border-top: 5px solid #030a09;
+}
+
+.tinkoff .main-menu {
+    margin: 0 auto;
+    border-radius: 0px;
+}
+
+.tinkoff .main-menu ul li {
+    text-transform: none;
+    padding: 0px 22px;
+}
+
+.mir-theme .main-menu ul li:hover > a {
+    background: rgb(0, 229, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.mir-theme .width.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.mir-theme .main-menu {
+    background: transparent;
+    z-index: 159;
+}
+
+.mir-theme .main-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.mir-theme .main-menu ul li {
+    height: 50px;
+}
+
+body:not(.eng).mir-theme .main-menu-wrapper{
+    margin-bottom: -52px;
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    z-index: 150;
+    background: transparent;
+    background-color: transparent;
+}
+
+.mir-theme .main-menu-wrapper:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-50%) skewX(-20deg);
+    background: rgba(0, 0, 88, 0.90);
+    z-index: -1;
+    width: 80%;
+}
+
+.mir-theme .main-menu-wrapper .lines:after{
+    display: block;
+    content: '';
+    height: 4px;
+    width: 300px;
+    position: absolute;
+    right: 473px;
+    bottom: -4px;
+    background: #417FBF;
+    transform: skewX(-20deg);
+}
+
+.mir-theme .main-menu ul {
+    margin-right: 0;
+}
+
+.mir-theme .main-menu ul {
+    justify-content: center;
+}
+
+/* Главная */
+@media screen and (min-width: 769px) {
+    .hamburger-menu, .menu-btn {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .con {
+        background: url(../images/fon1.jpg) no-repeat;
+        width: 100%;
+        height: 900px;
+        background-size: auto 100%;
+        background-position: center;
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tinkoff .main-menu ul li {
+      padding: 0px 5px;
+    }
+
+    .kontakt-name-text {
+        font-size: 60px;
+        text-align: center;
+        color: rgb(0, 229, 255);
+    }
+
+    .kontakt-donate {
+        display: block;
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .tinkoff .main-menu ul li {
+      padding: 0px 5px;
+    }
+
+    .main-menu ul li > a {
+        font-size: 15px;
+    }
+
+    .kontakt-name-text {
+        font-size: 50px;
+        text-align: center;
+        color: rgb(0, 229, 255);
+    }
+
+    .row-tg a {
+        text-decoration: none;
+        color: #ff6a13;
+        display: flex;
+        padding: 10px 0px;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .kontakt-tg {
+        display: block;
+        width: 35%;
+    }
+}
+  
+@media screen and (max-width: 993px) {
+    .tinkoff .main-menu ul li {
+      padding: 0px 3px;
+    }
+  
+    .main-menu ul li > a {
+      font-size: 16px;
+    }
+
+
+}
+  
+@media screen and (max-width: 769px) {
+    body:not(.eng).mir-theme .main-menu-wrapper {
+        display: none;
+    }
+
+    .con-fon {
+        padding: 25% 0 0 0;
+    }
+
+    .content-area {
+        padding: 0 0 0 0;
+    }
+
+    .kontakt-add {
+        padding-top: 35px;
+        font-family: "Roboto Slab";
+    }
+
+    .kontakt-donate {
+        display: block;
+        padding-top: 215px;
+    }
+}
+/* ФОН */
+@media screen and (max-width: 500px) {
+    .con {
+        background: url(../images/fon_media_glavnaya.JPG) no-repeat;
+        width: 100%;
+        height: 900px;
+        background-size: auto 100%;
+        background-position: center;
+        margin-top: -25px;
+    }
+}
+  
+@media screen and (max-width: 481px) {
+    .con-fon {
+        padding: 25% 0 0 0;
+    }
+
+    .name-reg-vid {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .kontakt-tg {
+        display: block;
+        width: 50%;
+    }
+
+    .kontakt-name-text {
+        font-size: 40px;
+        text-align: center;
+        color: rgb(0, 229, 255);
+    }
+
+    .row-tg a {
+        text-decoration: none;
+        color: #ff6a13;
+        display: flex;
+        padding: 10px 0px;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .kontakt-donate-text {
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+    .kontakt-list {
+        padding: 0px 0px 0 30px;
+    }
+
+    .kd-1 {
+        color: #ffffff;
+        padding-left: 35px;
+    }
+
+    .kontakt-qiwi img {
+        padding-right: 1px;
+        width: 13.7%;
+        height: 50%;
+    }
+      
+      .kontakt-card img {
+        width: 14%;
+        height: 50%;
+    }
+}
+  
+@media screen and (max-width: 426px) {
+    .con-fon {
+        padding: 40% 0 0 0;
+    }
+    
+    .name-reg-vid {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .row-tg a {
+        text-decoration: none;
+        color: #ff6a13;
+        display: flex;
+        padding: 10px 0px;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    .kontakt-name-text {
+        font-size: 30px;
+        text-align: center;
+        color: rgb(0, 229, 255);
+        padding: 0px 0px 15px 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .con-fon {
+        padding: 45% 0 0 0;
+    }
+
+    .name-reg-vid {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .e-content {
+        text-align: justify;
+        margin: 25px;
+        font-size: 15px;
+    }
+
+    .row-tg a {
+        text-decoration: none;
+        color: #ff6a13;
+        display: flex;
+        padding: 10px 0px;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .kontakt-name-text {
+        font-size: 30px;
+        text-align: center;
+        color: rgb(0, 229, 255);
+        padding: 0px 0px 15px 0;
+    }
+
+    .kontakt-qiwi img {
+        padding-right: 1px;
+        width: 17.7%;
+        height: 50%;
+    }
+      
+      .kontakt-card img {
+        width: 18%;
+        height: 50%;
+    }
+
+    .kd-1 {
+        color: #ffffff;
+        padding-left: 35px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .con-fon {
+        padding: 50% 0 0 0;
+    }
+    
+    .kd-1 {
+        color: #ffffff;
+        padding-left: 35px;
+        font-size: 11px;
+    }
+
+    .kontakt-tg {
+        display: block;
+        width: 70%;
+    }
+
+    .kontakt-donate-text {
+        color: #ffffff;
+        font-size: 12px;
+        padding-right: 20px;
+    }
+}
