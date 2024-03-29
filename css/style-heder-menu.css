@@ -275,6 +275,13 @@ body:not(.eng).mir-theme .main-menu-wrapper{
     }
 }
 
+@media screen and (max-width: 769px) and (max-width: 955px) {
+    .kontakt-donate {
+        display: block;
+        padding-top: 420px;
+    }
+}
+
 @media screen and (max-width: 1025px) {
     .tinkoff .main-menu ul li {
       padding: 0px 5px;
